@@ -3,36 +3,32 @@ Seminar Hall Booking System
 A React-based application for booking seats in a seminar hall. This system allows users to select a date and book available seats for that date. Booked seats are highlighted and saved in local storage.
 Features
 
-    Date Selection: Users can select a date to view and book seats for that specific day.
-    Seat Booking: Click on a seat to book it. Booked seats are highlighted.
-    Local Storage: Booked seats are saved in local storage and persist across page reloads.
+Date Selection: Users can select a date to view and book seats for that specific day.
+Seat Booking: Click on a seat to book it. Booked seats are highlighted.
+Local Storage: Booked seats are saved in local storage and persist across page reloads.
 
 Technologies Used
 
-    React
-    Moment.js
-    MUI Date Pickers
-    Local Storage
+React
+Moment.js
+MUI Date Pickers
+Local Storage
 
 Setup
 
-    Clone the repository
+Clone the repository
 
     sh
-
-git clone https://github.com/your-username/seminar-hall-booking.git
-cd seminar-hall-booking
+    git clone https://github.com/your-username/seminar-hall-booking.git
+    cd seminar-hall-booking
 
 Install dependencies
 
-sh
-
-npm run dev
+    sh
+    npm run dev
 
 Start the development server
-
-sh
-
+    sh
     npm start
 
 Components
