@@ -26,7 +26,7 @@ const Seat = ({ seatno, date, bookedSeats, setBookedSeats }) => {
   return (
     <div className='relative'>
       <div
-        onClick={openModal}
+        onClick={isBooked ? "" : openModal}
         className={`min-h-16 min-w-20 rounded-lg flex items-center justify-center cursor-pointer ${isBooked ? 'bg-red-900' : 'bg-green-500'}`}
       >
         <h1>{seatno}</h1>
