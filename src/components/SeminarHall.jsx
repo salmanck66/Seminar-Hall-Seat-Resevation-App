@@ -6,6 +6,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import moment from 'moment';
 import dayjs from 'dayjs'
 
+
 const SeminarHall = () => {
     const [bookedSeats, setBookedSeats] = useState(() => {
         // Retrieve bookedSeats from localStorage
@@ -22,12 +23,12 @@ const SeminarHall = () => {
     
 
     return (
-        <div className='h-screen bg-neutral-100'>
+        <div className='h-screen bg-green-200'>
             <h1 className='text-center py-1  pt-12 text-2xl'>Seminar Hall Booking</h1>
             <h1 className='text-center py-1 text-xl'>Select Date</h1>
             <div className='flex justify-center items-center py-5 lg:py-14'>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <DatePicker defaultValue={dayjs(new Date())}  selected={moment(startDate).format("YYYY-MM-DD")} onChange={(date) => setStartDate(date.$d)} />
+                    <DatePicker minDate={dayjs(new Date())} defaultValue={dayjs(new Date())}  selected={moment(startDate).format("YYYY-MM-DD")} onChange={(date) => setStartDate(date.$d)} />
                 </LocalizationProvider>
             </div>
             <SeatMap date={moment(startDate).format("YYYY-MM-DD")} bookedSeats={bookedSeats} setBookedSeats={setBookedSeats} />
