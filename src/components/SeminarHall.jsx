@@ -27,7 +27,7 @@ const SeminarHall = () => {
             <h1 className='text-center py-1 text-xl'>Select Date</h1>
             <div className='flex justify-center items-center py-4'>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <DatePicker defaultValue={dayjs(new Date())}  selected={moment(startDate).format("YYYY-MM-DD")} onChange={(date) => setStartDate(date.$d)} />
+                    <DatePicker minDate={dayjs(new Date())} defaultValue={dayjs(new Date())}  selected={moment(startDate).format("YYYY-MM-DD")} onChange={(date) => setStartDate(date.$d)} />
                 </LocalizationProvider>
             </div>
             <SeatMap date={moment(startDate).format("YYYY-MM-DD")} bookedSeats={bookedSeats} setBookedSeats={setBookedSeats} />
