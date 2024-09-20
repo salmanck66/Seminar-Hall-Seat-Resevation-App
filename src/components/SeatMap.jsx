@@ -11,7 +11,7 @@ const SeatMap = ({ date, bookedSeats, setBookedSeats }) => {
   console.log("filtered",filteredBookedSeats)
 
   return (
-    <div className="flex items-center ms-2 me-3 mb-10 justify-center text-center pt-15">
+    <div className="flex items-center ms-2 me-3 mb-56 sm:mb-10 justify-center text-center pt-15">
       <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2 sm:gap-8">
         {seats.map((seat) => (
           <Seat
