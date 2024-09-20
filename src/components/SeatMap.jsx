@@ -12,7 +12,7 @@ const SeatMap = ({ date, bookedSeats, setBookedSeats }) => {
 
   return (
     <div className="flex items-center justify-center text-center pt-15">
-      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-4">
+      <div className="grid grid-cols-4 m-1 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-4">
         {seats.map((seat) => (
           <Seat
             key={seat.seatno}
