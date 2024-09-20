@@ -36,7 +36,7 @@ const Seat = ({ seatno, date, bookedSeats, setBookedSeats }) => {
           <div className='backdrop-blur-lg bg-white/30 rounded-xl p-10'>
             <Modal isOpen={showModal} onClose={closeModal}>
               <BookingForm seatno={seatno} date={date} onSubmit={bookSeat} />
-              <button onClick={closeModal}>Close</button>
+              <button className='text-white my-2 px-3 py-1 bg-red-400 rounded-md' onClick={closeModal}>Close</button>
               <div>
                 {date && (
                   <h1>Date: {date}</h1>
