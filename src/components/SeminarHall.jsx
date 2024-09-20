@@ -23,7 +23,7 @@ const SeminarHall = () => {
     
 
     return (
-        <div className='h-screen bg-green-200'>
+        <div className='h-screen'>
             <h1 className='text-center py-1  pt-12 text-2xl'>Seminar Hall Booking</h1>
             <h1 className='text-center py-1 text-xl'>Select Date</h1>
             <div className='flex justify-center items-center py-5 lg:py-14'>
